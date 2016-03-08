@@ -8,6 +8,8 @@ public class HelloGit {
 		System.out.println("Test 08032016");
 		
 		System.out.println("Kevins A Teil1");
+		
+		System.out.println("Test 2");
 	
 	}
 
