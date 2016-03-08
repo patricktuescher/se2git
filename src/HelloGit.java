@@ -10,6 +10,8 @@ public class HelloGit {
 		System.out.println("Kevins A Teil1");
 		
 		System.out.println("Test 2");
+		
+		System.out.println("Test 3");
 	
 	}
 
