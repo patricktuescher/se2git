@@ -2,32 +2,14 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-import java.awt.GridBagLayout;
-
 import javax.swing.JButton;
 
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
 import java.awt.Image;
-import java.awt.Insets;
-import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Toolkit;
-
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
-import javax.swing.BoxLayout;
 import javax.swing.JRadioButton;
 
-import java.awt.Component;
-
-import javax.swing.JInternalFrame;
-
-import java.awt.FlowLayout;
-
-import javax.swing.JSplitPane;
-import javax.swing.SwingConstants;
-import javax.swing.SpringLayout;
 import javax.swing.JLabel;
 
 import java.awt.event.ActionListener;
@@ -36,21 +18,12 @@ import java.awt.Color;
 
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
-import javax.swing.JList;
-import javax.swing.border.CompoundBorder;
-import javax.swing.border.LineBorder;
 import java.awt.Font;
 
 
-public class NichtLustigTry2 {
+public class NichtLustigGUI {
 
 	private JFrame frame;
-	private JPanel serverPanel;
-	private JPanel loginPanel;
-	private JPanel lobbyPanel;
-	private JPanel statistikPanel;
-	private JPanel regelPanel;
-	private JPanel spielPanel;
 	private JTextField textField;
 	private JPasswordField passwordField;
 
@@ -61,7 +34,7 @@ public class NichtLustigTry2 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					NichtLustigTry2 window = new NichtLustigTry2();
+					NichtLustigGUI window = new NichtLustigGUI();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -73,7 +46,7 @@ public class NichtLustigTry2 {
 	/**
 	 * Create the application.
 	 */
-	public NichtLustigTry2() {
+	public NichtLustigGUI() {
 		initialize();
 	}
 
@@ -270,15 +243,6 @@ public class NichtLustigTry2 {
 		
 		
 		// lobbyPanel Components
-		JList list = new JList();
-		list.setBorder(new LineBorder(new Color(0, 0, 0), 5, true));
-		list.setForeground(new Color(255, 255, 255));
-		list.setSelectedIndex(0);
-		list.setValueIsAdjusting(true);
-		list.setBackground(new Color(255, 255, 255));
-		list.setBounds(332, 578, 311, -197);
-		lobbyPanel.add(list);
-		
 		JButton btnSpielErstellen = new JButton("Spiel erstellen");
 		btnSpielErstellen.setBounds(235, 252, 117, 29);
 		lobbyPanel.add(btnSpielErstellen);
