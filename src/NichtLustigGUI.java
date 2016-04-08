@@ -1,15 +1,17 @@
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
+import javafx.scene.image.ImageView;
 
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
 import javax.swing.JButton;
 
 import java.awt.Image;
 import java.awt.CardLayout;
+
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-
 import javax.swing.JLabel;
 
 import java.awt.event.ActionListener;
@@ -18,6 +20,7 @@ import java.awt.Color;
 
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+
 import java.awt.Font;
 
 
@@ -151,14 +154,14 @@ public class NichtLustigGUI {
 		
 		// serverPanel Images
 		JLabel lblServerImgSensemann = new JLabel("");
-		Image serverImgSensemann = new ImageIcon(this.getClass().getResource("/Sensemann.png")).getImage();
-		lblServerImgSensemann.setIcon(new ImageIcon(serverImgSensemann));
+		//Image serverImgSensemann = new ImageIcon(this.getClass().getResource("/Sensemann.png")).getImage();
+		//lblServerImgSensemann.setIcon(new ImageIcon(serverImgSensemann));
 		lblServerImgSensemann.setBounds(614, -47, 622, 598);
 		serverPanel.add(lblServerImgSensemann);
 		
 		JLabel lblServerImgBackground = new JLabel("");
-		Image serverImgBackground = new ImageIcon(this.getClass().getResource("/NichtLustigCollage2.png")).getImage();
-		lblServerImgBackground.setIcon(new ImageIcon(serverImgBackground));
+		//Image serverImgBackground = new ImageIcon(this.getClass().getResource("/NichtLustigCollage2.png")).getImage();
+		//lblServerImgBackground.setIcon(new ImageIcon(serverImgBackground));
 		lblServerImgBackground.setBounds(0, 374, 1000, 354);
 		serverPanel.add(lblServerImgBackground);
 		
@@ -223,15 +226,15 @@ public class NichtLustigGUI {
 		// loginPanel Images
 		
 		JLabel lblLoginImgSensemann = new JLabel("");
-		Image loginImgSensemann = new ImageIcon(this.getClass().getResource("/Sensemann.png")).getImage();
-		lblLoginImgSensemann.setIcon(new ImageIcon(loginImgSensemann));
+		//Image loginImgSensemann = new ImageIcon(this.getClass().getResource("/Sensemann.png")).getImage();
+		//lblLoginImgSensemann.setIcon(new ImageIcon(loginImgSensemann));
 		lblLoginImgSensemann.setBounds(614, -47, 622, 598);
 		loginPanel.add(lblLoginImgSensemann);
 		
 		
 		JLabel lblLoginImgBackground = new JLabel("");
-		Image loginImgBackground = new ImageIcon(this.getClass().getResource("/NichtLustigCollage2.png")).getImage();
-		lblLoginImgBackground.setIcon(new ImageIcon(loginImgBackground));
+		//Image loginImgBackground = new ImageIcon(this.getClass().getResource("/NichtLustigCollage2.png")).getImage();
+		//lblLoginImgBackground.setIcon(new ImageIcon(loginImgBackground));
 		lblLoginImgBackground.setBounds(0, 374, 1000, 354);
 		loginPanel.add(lblLoginImgBackground);
 		
